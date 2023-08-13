@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    environment: Node
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,6 +26,7 @@ jobs:
       LAZADA_ENDPOINT: https://api.lazada.co.th/rest
 
   publish-npm:
+    environment: Node
     needs: build
     runs-on: ubuntu-latest
     steps:
