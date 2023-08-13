@@ -2,13 +2,13 @@
 
     import {LazadaAPI} from "lazada-api-node";
     const result = await  LazadaAPI.api.GetRequest({
-	    accessToken:  process.env.access_token  as  string,
+	    accessToken:  process.env.ACCESS_TOKEN  as  string,
 	    route:  '/seller/get',
     });
    
 
     const  result = await  LazadaAPI.api.PostRequest({
-	    accessToken:  process.env.access_token  as  string,
+	    accessToken:  process.env.ACCESS_TOKEN  as  string,
 	    route:  '/order/shipment/providers/get',
 	    parameters: {
 		    getShipmentProvidersReq:  JSON.stringify({
