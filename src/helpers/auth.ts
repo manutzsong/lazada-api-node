@@ -31,7 +31,6 @@ export class AuthURLGenerator {
     payloadAppend.app_key = process.env.APP_KEY;
 
     const keysortParams = keysort(payloadAppend);
-    console.log(keysortParams, "keysort params");
     // 2. Concatenate the sorted parameters into a string i.e. "key" + "value" + "key2" + "value2"...
     const concatString = concatDictionaryKeyValue(keysortParams);
 
