@@ -53,7 +53,6 @@ const GetRequest = async ({
     });
     return new Promise((resolve) => resolve(res.data.data));
   } catch (e) {
-    console.log(e);
     return new Promise((_resolve, reject) => reject(e));
   }
 };
@@ -92,7 +91,6 @@ const PostRequest = async ({
     });
     return new Promise((resolve) => resolve(res.data));
   } catch (e) {
-    console.log(e);
     return new Promise((_resolve, reject) => reject(e));
   }
 };
