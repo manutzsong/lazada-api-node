@@ -22,7 +22,7 @@ jobs:
       APP_KEY: ${{secrets.APP_KEY}}
       APP_SECRET: ${{secrets.APP_SECRET}}
       CALLBACK_URL: ${{secrets.CALLBACK_URL}}
-      access_token: ${{secrets.access_token}}
+      ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
       LAZADA_ENDPOINT: https://api.lazada.co.th/rest
 
   publish-npm:
