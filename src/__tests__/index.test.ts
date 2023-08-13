@@ -44,7 +44,7 @@ describe('Get Route', () => {
       route: '/seller/get',
     });
     console.log(result);
-    expect('code' in result).toBeTruthy();
+    expect('short_code' in result).toBeTruthy();
   });
 });
 
