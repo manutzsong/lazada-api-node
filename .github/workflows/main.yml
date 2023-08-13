@@ -16,6 +16,12 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
+      - run: npm test
+    env:
+      APP_KEY: ${{secrets.APP_KEY}}
+      APP_SECRET: ${{secrets.APP_SECRET}}
+      CALLBACK_URL: ${{secrets.CALLBACK_URL}}
+      LAZADA_ENDPOINT: https://api.lazada.co.th/rest
 
   publish-npm:
     needs: build
